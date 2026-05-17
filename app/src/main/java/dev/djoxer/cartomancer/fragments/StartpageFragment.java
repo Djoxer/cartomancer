@@ -30,6 +30,15 @@ public class StartpageFragment extends Fragment {
         textKin = v.findViewById(R.id.text_kin);
         imagePhase = v.findViewById(R.id.image_phase);
 
+        long knownNewMoon = 947182440000L;
+        long now = System.currentTimeMillis();
+        double synodicMonth = 29.530588853 * 24 * 60 * 60 * 1000;
+        double cyclePosition = ((now - knownNewMoon) % synodicMonth) / synodicMonth;
+
+        android.util.Log.d("MOON_DEBUG", "cyclePosition: " + cyclePosition);
+        android.util.Log.d("MOON_DEBUG", "index: " + MoonPhase.index());
+        android.util.Log.d("MOON_DEBUG", "percentage: " + MoonPhase.percentage());
+
         // Mondphase
         textPhase.setText(getMoonPhaseName(MoonPhase.index()));
         textPhasePercent.setText(MoonPhase.percentage() + "%");

@@ -99,7 +99,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         UiModeManager uiModeManager = (UiModeManager) getSystemService(UI_MODE_SERVICE);
 
         toggleDarkmode.setChecked(darkMode);
-
+        // Initial-Icon entsprechend gespeichertem Wert setzen
+        toggleDarkmode.setBackground(getResources().getDrawable(
+                darkMode ? R.drawable.ic_mode_light : R.drawable.ic_mode_dark
+        ));
         toggleDarkmode.setOnCheckedChangeListener((tgl, isChecked) -> {
             if (isChecked) {
                 tgl.setBackground(getResources().getDrawable(R.drawable.ic_mode_dark));
