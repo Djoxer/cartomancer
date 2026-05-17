@@ -31,7 +31,7 @@ public class StartpageFragment extends Fragment {
         imagePhase = v.findViewById(R.id.image_phase);
 
         // Mondphase
-        textPhase.setText(new MoonPhase().toString());
+        textPhase.setText(getMoonPhaseName(MoonPhase.index()));
         textPhasePercent.setText(MoonPhase.percentage() + "%");
         imagePhase.setImageResource(
                 getResources().getIdentifier(
@@ -40,6 +40,14 @@ public class StartpageFragment extends Fragment {
                         getActivity().getPackageName()
                 )
         );
+
+        // Labels dynamisch setzen
+        ((TextView) v.findViewById(R.id.label_moon))
+                .setText("☽  " + getString(R.string.label_moon));
+        ((TextView) v.findViewById(R.id.label_sun))
+                .setText("☀  " + getString(R.string.label_sun));
+        ((TextView) v.findViewById(R.id.label_kin))
+                .setText("✦  " + getString(R.string.label_kin));
 
         // Sonnenzeichen aus aktuellem Datum berechnen
         Calendar cal = Calendar.getInstance();
@@ -52,6 +60,18 @@ public class StartpageFragment extends Fragment {
         textKin.setText("—");
 
         return v;
+    }
+
+    // Mondphase berechnen
+    private String getMoonPhaseName(int phase) {
+        if (phase == 75) return getString(R.string.moon_first_quarter);
+        if (phase == 100) return getString(R.string.moon_full);
+        if (phase == 25) return getString(R.string.moon_last_quarter);
+        if (phase == 50) return getString(R.string.moon_new);
+        if (phase < 25) return getString(R.string.moon_waning_crescent);
+        if (phase < 50) return getString(R.string.moon_waning_gibbous);
+        if (phase < 75) return getString(R.string.moon_waxing_crescent);
+        return getString(R.string.moon_waxing_gibbous);
     }
 
     // Sonnenzeichen aus Monat/Tag berechnen

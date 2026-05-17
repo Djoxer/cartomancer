@@ -31,6 +31,17 @@
     <string name="text_language">Language</string>
     <string name="lang_en">English</string>
     <string name="lang_de">German</string>
+
+    <!-- Startpage -->
+    <string name="label_moon">Moon</string>
+    <string name="label_sun">Sun</string>
+    <string name="label_kin">KIN</string>
+    <string name="text_placeholder">—</string>
+
+    <!-- About -->
+    <string name="about_description">A Tarot-based calendar and divination app combining ancient symbolic systems with modern mobile technology.</string>
+    <string name="about_copyright">© 2024-2026 Daniel Orzalesi (Djoxer)\nAll rights reserved.</string>
+
     <!-- Zodiac signs -->
     <string name="sign_aries">Aries</string>
     <string name="sign_taurus">Taurus</string>
@@ -44,6 +55,16 @@
     <string name="sign_capricorn">Capricorn</string>
     <string name="sign_aquarius">Aquarius</string>
     <string name="sign_pisces">Pisces</string>
+
+    <!-- Moon phases -->
+    <string name="moon_waxing_crescent">Waxing Crescent</string>
+    <string name="moon_first_quarter">First Quarter</string>
+    <string name="moon_waxing_gibbous">Waxing Gibbous</string>
+    <string name="moon_full">Full Moon</string>
+    <string name="moon_waning_gibbous">Waning Gibbous</string>
+    <string name="moon_last_quarter">Last Quarter</string>
+    <string name="moon_waning_crescent">Waning Crescent</string>
+    <string name="moon_new">New Moon</string>
 
     <string-array name="coins">
         <item>Coins</item>

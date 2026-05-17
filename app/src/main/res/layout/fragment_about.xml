@@ -38,7 +38,7 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A Tarot-based calendar and divination app combining ancient symbolic systems with modern mobile technology."
+                android:text="@string/about_description"
                 android:textSize="15sp"
                 android:textColor="?attr/colorOnBackground"
                 android:layout_marginBottom="24dp"/>
@@ -46,7 +46,7 @@
         <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="© 2024-2026 Daniel Orzalesi (Djoxer)\nAll rights reserved."
+                android:text="@string/about_copyright"
                 android:textSize="13sp"
                 android:textColor="?attr/colorOnBackground" />
     </LinearLayout>

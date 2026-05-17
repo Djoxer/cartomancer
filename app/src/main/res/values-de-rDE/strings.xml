@@ -31,6 +31,17 @@
     <string name="text_language">Sprache</string>
     <string name="lang_en">Englisch</string>
     <string name="lang_de">Deutsch</string>
+
+    <!-- Startseite -->
+    <string name="label_moon">Mond</string>
+    <string name="label_sun">Sonne</string>
+    <string name="label_kin">KIN</string>
+    <string name="text_placeholder">—</string>
+
+    <!-- Über -->
+    <string name="about_description">Eine Tarot-basierte Kalender- und Wahrsage-App, die alte Symbolsysteme mit moderner Mobiltechnologie verbindet.</string>
+    <string name="about_copyright">© 2024-2026 Daniel Orzalesi (Djoxer)\nAlle Rechte vorbehalten.</string>
+
     <!-- Tierkreiszeichen -->
     <string name="sign_aries">Widder</string>
     <string name="sign_taurus">Stier</string>
@@ -44,6 +55,16 @@
     <string name="sign_capricorn">Steinbock</string>
     <string name="sign_aquarius">Wassermann</string>
     <string name="sign_pisces">Fische</string>
+
+    <!-- Mondphasen -->
+    <string name="moon_waxing_crescent">Zunehmende Sichel</string>
+    <string name="moon_first_quarter">Halbmond (1. Viertel)</string>
+    <string name="moon_waxing_gibbous">Zunehmender Mond</string>
+    <string name="moon_full">Vollmond (2. Viertel)</string>
+    <string name="moon_waning_gibbous">Abnehmender Mond</string>
+    <string name="moon_last_quarter">Halbmond (3. Viertel)</string>
+    <string name="moon_waning_crescent">Abnehmende Sichel</string>
+    <string name="moon_new">Neumond (4. Viertel)</string>
 
     <string-array name="coins">
         <item>Münzen</item>

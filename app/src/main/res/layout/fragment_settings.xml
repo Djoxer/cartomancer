@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?android:attr/windowBackground"
+        android:padding="24dp">
+
+    <!-- Language -->
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_language"
+            android:textSize="12sp"
+            android:textColor="?attr/colorOnBackground"
+            android:alpha="0.5"
+            android:letterSpacing="0.1"
+            android:layout_marginBottom="12dp"/>
+
+    <RadioGroup
+            android:id="@+id/radio_group_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <RadioButton
+                android:id="@+id/radio_lang_de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lang_de"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginBottom="8dp"/>
+
+        <RadioButton
+                android:id="@+id/radio_lang_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lang_en"
+                android:textSize="16sp"
+                android:fontFamily="serif"
+                android:textColor="?attr/colorOnBackground"/>
+
+    </RadioGroup>
+
+    <!-- Divider -->
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="?attr/colorOnBackground"
+            android:alpha="0.15"
+            android:layout_marginTop="24dp"/>
+
+</LinearLayout>

@@ -29,6 +29,7 @@ import dev.djoxer.cartomancer.fragments.AboutFragment;
 import dev.djoxer.cartomancer.fragments.DayCardFragment;
 import dev.djoxer.cartomancer.fragments.PersonalityCardsFragment;
 import dev.djoxer.cartomancer.fragments.RandomCardFragment;
+import dev.djoxer.cartomancer.fragments.SettingsFragment;
 import dev.djoxer.cartomancer.fragments.SpreadsFragment;
 import dev.djoxer.cartomancer.fragments.StartpageFragment;
 import dev.djoxer.cartomancer.fragments.dialogs.SortingDialogFragment;
@@ -123,6 +124,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_share) {
             Toast.makeText(this, R.string.nav_share, Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_settings) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new SettingsFragment()).commit();
             Toast.makeText(this, R.string.nav_settings, Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_help) {
             Toast.makeText(this, R.string.nav_help, Toast.LENGTH_SHORT).show();
