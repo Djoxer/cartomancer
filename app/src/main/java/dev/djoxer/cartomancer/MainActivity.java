@@ -6,11 +6,12 @@ import static dev.djoxer.cartomancer.util.Cartomancer.buildDeck;
 
 import android.app.DatePickerDialog;
 import android.app.UiModeManager;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.Toast;
 
@@ -40,9 +41,11 @@ import dev.djoxer.cartomancer.util.tarot.Suit;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DatePickerDialog.OnDateSetListener, SortingDialogFragment.BottomSheetListener {
     private DrawerLayout drawer;
+    private SharedPreferences prefs;
 
     protected static Cartomancer cartomancer;
     public static Calendar calendar;
@@ -50,6 +53,22 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Gespeicherte Sprache wiederherstellen
+        prefs = getSharedPreferences("cartomancer_prefs", MODE_PRIVATE);
+        String lang = prefs.getString("language", Locale.getDefault().getLanguage());
+        Locale locale = new Locale(lang);
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.setLocale(locale);
+        getResources().updateConfiguration(config, getResources().getDisplayMetrics());
+
+        // Dark Mode (vor setContentView, keine View nötig)
+        boolean darkMode = prefs.getBoolean("dark_mode", false);
+        AppCompatDelegate.setDefaultNightMode(
+                darkMode ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO
+        );
+
         setContentView(R.layout.activity_main);
 
         cartomancer = new Cartomancer(buildDeck());
@@ -79,11 +98,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         AppCompatToggleButton toggleDarkmode = header.findViewById(R.id.toggle_darkmode);
         UiModeManager uiModeManager = (UiModeManager) getSystemService(UI_MODE_SERVICE);
 
+        toggleDarkmode.setChecked(darkMode);
+
         toggleDarkmode.setOnCheckedChangeListener((tgl, isChecked) -> {
             if (isChecked) {
+                tgl.setBackground(getResources().getDrawable(R.drawable.ic_mode_dark));
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                prefs.edit().putBoolean("dark_mode", true).apply();
             } else {
+                tgl.setBackground(getResources().getDrawable(R.drawable.ic_mode_light));
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                prefs.edit().putBoolean("dark_mode", false).apply();
             }
         });
 

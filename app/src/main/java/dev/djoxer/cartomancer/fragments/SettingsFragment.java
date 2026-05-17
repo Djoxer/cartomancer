@@ -1,5 +1,6 @@
 package dev.djoxer.cartomancer.fragments;
 
+import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -46,6 +47,13 @@ public class SettingsFragment extends Fragment {
     }
 
     private void setLocale(Locale locale) {
+        // Sprache persistent speichern
+        requireContext()
+                .getSharedPreferences("cartomancer_prefs", Context.MODE_PRIVATE)
+                .edit()
+                .putString("language", locale.getLanguage())
+                .apply();
+
         Locale.setDefault(locale);
         Configuration config = new Configuration();
         config.setLocale(locale);
@@ -53,7 +61,6 @@ public class SettingsFragment extends Fragment {
                 config,
                 requireContext().getResources().getDisplayMetrics()
         );
-        // Activity neu starten damit alle Strings neu geladen werden
         requireActivity().recreate();
     }
 }
