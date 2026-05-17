@@ -7,7 +7,7 @@
     android:layout_height="176dp"
     android:background="?attr/colorPrimary"
     android:gravity="bottom"
-    android:paddingTop="32dp"
+    android:paddingTop="?attr/actionBarSize"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">

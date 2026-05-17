@@ -24,6 +24,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import dev.djoxer.cartomancer.fragments.AboutFragment;
 import dev.djoxer.cartomancer.fragments.DayCardFragment;
 import dev.djoxer.cartomancer.fragments.PersonalityCardsFragment;
 import dev.djoxer.cartomancer.fragments.RandomCardFragment;
@@ -133,6 +134,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_help) {
             Toast.makeText(this, R.string.nav_help, Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_about) {
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                    new AboutFragment()).commit();
             Toast.makeText(this, R.string.nav_about, Toast.LENGTH_SHORT).show();
         } else if (id == R.id.nav_exit) {
             finishAffinity();
