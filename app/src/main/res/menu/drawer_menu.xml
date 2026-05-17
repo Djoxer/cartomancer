@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_startpage"
+            android:icon="@drawable/ic_startpage"
+            android:title="@string/nav_startpage" />
+
+        <item
+            android:id="@+id/nav_day_card"
+            android:icon="@drawable/ic_day_card"
+            android:title="@string/nav_day_card" />
+
+        <item
+            android:id="@+id/nav_personality_cards"
+            android:icon="@drawable/ic_personality_cards"
+            android:title="@string/nav_personality_cards" />
+
+        <item
+            android:id="@+id/nav_random_card"
+            android:icon="@drawable/ic_random_card"
+            android:title="@string/nav_random_card" />
+
+        <item
+            android:id="@+id/nav_sorting"
+            android:icon="@drawable/ic_sorting"
+            android:title="@string/nav_sorting" />
+
+        <item
+            android:id="@+id/nav_spreads"
+            android:icon="@drawable/ic_spreads"
+            android:title="@string/nav_spreads" />
+    </group>
+
+    <item android:title="@string/nav_title_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_share"
+                android:title="@string/nav_share" />
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_title_appexit">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help"
+                android:title="@string/nav_help" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_about"
+                android:title="@string/nav_about" />
+
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_close"
+                android:title="@string/nav_exit" />
+        </menu>
+    </item>
+</menu>

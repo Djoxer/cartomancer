@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cartomancer</string>
+    <string name="nav_startpage">Startseite</string>
+    <string name="nav_day_card">Tages Karte</string>
+    <string name="nav_personality_cards">Persönliche Karten</string>
+    <string name="nav_random_card">Zufällige Karte</string>
+    <string name="nav_spreads">Tarot Legung</string>
+    <string name="nav_sorting">Sortier-Spiel</string>
+    <string name="text_sorted">Sortiert!</string>
+    <string name="nav_share">Teilen</string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="nav_help">Hilfe</string>
+    <string name="nav_exit">Beenden</string>
+    <string name="nav_about">Über</string>
+    <string name="btn_cancel">Abbrechen</string>
+    <string name="text_personality">Persönlichkeit</string>
+    <string name="text_personality_card">Persönlichkeitskarte</string>
+    <string name="text_creativity_card">Kreativitätskarte</string>
+    <string name="text_soul_card">Wesenskarte</string>
+    <string name="text_growth_card">Wachstumskarte</string>
+    <string name="text_of">der</string>
+    <string name="text_trump">Große Arkana</string>
+    <string name="text_creativity">Kreativität</string>
+    <string name="text_soul">Wesen</string>
+    <string name="text_growth">Wachstum</string>
+    <string name="nav_title_communicate">Kommunikation</string>
+    <string name="nav_title_appexit">Anwendung</string>
+    <string name="navigation_drawer_close">Navigation schließen</string>
+    <string name="navigation_drawer_open">Navigation öffnen</string>
+    <string name="text_language">Sprache</string>
+    <string name="lang_en">Englisch</string>
+    <string name="lang_de">Deutsch</string>
+
+    <string-array name="coins">
+        <item>Münzen</item>
+        <item>Ass</item>
+        <item>Wechsel</item>
+        <item>Arbeit</item>
+        <item>Macht</item>
+        <item>Quälerei</item>
+        <item>Erfolg</item>
+        <item>Fehlschlag</item>
+        <item>Umsicht</item>
+        <item>Gewinn</item>
+        <item>Reichtum</item>
+        <item>Bube</item>
+        <item>Ritter</item>
+        <item>Königin</item>
+        <item>König</item>
+    </string-array>
+    <string-array name="cups">
+        <item>Kelche</item>
+        <item>Ass</item>
+        <item>Liebe</item>
+        <item>Fülle</item>
+        <item>Üppigkeit</item>
+        <item>Enttäuschung</item>
+        <item>Genuss</item>
+        <item>Verderbnis</item>
+        <item>Trägheit</item>
+        <item>Freude</item>
+        <item>Sattheit</item>
+        <item>Bube</item>
+        <item>Ritter</item>
+        <item>Königin</item>
+        <item>König</item>
+    </string-array>
+    <string-array name="swords">
+        <item>Schwerter</item>
+        <item>Ass</item>
+        <item>Frieden</item>
+        <item>Kummer</item>
+        <item>Waffenruhe</item>
+        <item>Niederlage</item>
+        <item>Wissenschaft</item>
+        <item>Vergeblichkeit</item>
+        <item>Einmischung</item>
+        <item>Grausamkeit</item>
+        <item>Untergang</item>
+        <item>Bube</item>
+        <item>Ritter</item>
+        <item>Königin</item>
+        <item>König</item>
+    </string-array>
+    <string-array name="wands">
+        <item>Stäbe</item>
+        <item>Ass</item>
+        <item>Herrschaft</item>
+        <item>Tugend</item>
+        <item>Vollendung</item>
+        <item>Streben</item>
+        <item>Sieg</item>
+        <item>Tapferkeit</item>
+        <item>Schnelligkeit</item>
+        <item>Ausgleichung</item>
+        <item>Unterdrückung</item>
+        <item>Bube</item>
+        <item>Ritter</item>
+        <item>Königin</item>
+        <item>König</item>
+    </string-array>
+    <string-array name="trumps">
+        <item>Der Narr</item>
+        <item>Der Magier</item>
+        <item>Die Hohepriesterin</item>
+        <item>Die Herrscherin</item>
+        <item>Der Herrscher</item>
+        <item>Der Hierophant</item>
+        <item>Die Liebenden</item>
+        <item>Der Wagen</item>
+        <item>Kraft</item>
+        <item>Der Eremit</item>
+        <item>Rad des Schicksals</item>
+        <item>Gerechtigkeit</item>
+        <item>Der Gehängte</item>
+        <item>Tod</item>
+        <item>Mäßigkeit</item>
+        <item>Der Teufel</item>
+        <item>Der Turm</item>
+        <item>Der Stern</item>
+        <item>Der Mond</item>
+        <item>Die Sonne</item>
+        <item>Gericht</item>
+        <item>Die Welt</item>
+    </string-array>
+    <string-array name="numbers">
+        <item>Null</item>
+        <item>Eins</item>
+        <item>Zwei</item>
+        <item>Drei</item>
+        <item>Vier</item>
+        <item>Fünf</item>
+        <item>Sechs</item>
+        <item>Sieben</item>
+        <item>Acht</item>
+        <item>Neun</item>
+        <item>Zehn</item>
+        <item>Bube</item>
+        <item>Ritter</item>
+        <item>Königin</item>
+        <item>König</item>
+    </string-array>
+</resources>

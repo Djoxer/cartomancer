@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_personality_card"
+        android:icon="@drawable/ic_person"
+        android:title="@string/text_personality" />
+
+    <item android:id="@+id/nav_creativity_card"
+        android:icon="@drawable/ic_creativity"
+        android:title="@string/text_creativity" />
+
+    <item android:id="@+id/nav_soul_card"
+        android:icon="@drawable/ic_soul"
+        android:title="@string/text_soul" />
+
+    <item android:id="@+id/nav_growth_card"
+        android:icon="@drawable/ic_growth"
+        android:title="@string/text_growth" />
+
+</menu>
