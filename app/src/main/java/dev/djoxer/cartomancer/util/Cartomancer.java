@@ -148,10 +148,7 @@ public class Cartomancer {
 
     public static Deck buildTrumps() {
         List<Card> list = new ArrayList<>();
-
         addToList(Suit.TRUMPS, 22, list, 0);
-
-        Deck deck = new Deck(list);
         return new Deck(list);
     }
 

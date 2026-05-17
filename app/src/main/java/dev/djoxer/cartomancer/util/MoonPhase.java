@@ -21,6 +21,12 @@ public class MoonPhase {
     }
 
     public static int percentage() {
+        int i = index();
+        // Mondphase als Prozentwert: 50=Neumond(0%), 100=Vollmond(100%)
+        // Unter 50: abnehmend, über 50: zunehmend — jeweils *2 für Prozentwert
+        if (i == 50) return 0;
+        return i > 50 ? (100 - i) * 2 : i * 2;
+        /*
         int ret;
 
         switch (index()) {
@@ -137,6 +143,7 @@ public class MoonPhase {
         }
 
         return ret;
+         */
     }
 
     @NonNull
