@@ -23,9 +23,17 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.google.android.material.navigation.NavigationView;
-import dev.djoxer.cartomancer.util.Card;
+
+import dev.djoxer.cartomancer.fragments.DayCardFragment;
+import dev.djoxer.cartomancer.fragments.PersonalityCardsFragment;
+import dev.djoxer.cartomancer.fragments.RandomCardFragment;
+import dev.djoxer.cartomancer.fragments.SpreadsFragment;
+import dev.djoxer.cartomancer.fragments.StartpageFragment;
+import dev.djoxer.cartomancer.fragments.dialogs.SortingDialogFragment;
+import dev.djoxer.cartomancer.fragments.sorting.SortingFragment;
+import dev.djoxer.cartomancer.util.tarot.Card;
 import dev.djoxer.cartomancer.util.Cartomancer;
-import dev.djoxer.cartomancer.util.Suit;
+import dev.djoxer.cartomancer.util.tarot.Suit;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -34,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
 
     protected static Cartomancer cartomancer;
-    protected static Calendar calendar;
+    public static Calendar calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

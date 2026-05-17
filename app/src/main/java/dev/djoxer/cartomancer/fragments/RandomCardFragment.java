@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,10 @@ import android.widget.Toast;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import dev.djoxer.cartomancer.util.Card;
+import dev.djoxer.cartomancer.MainActivity;
+import dev.djoxer.cartomancer.R;
+import dev.djoxer.cartomancer.listeners.OnSwipeTouchListener;
+import dev.djoxer.cartomancer.util.tarot.Card;
 import dev.djoxer.cartomancer.util.Cartomancer;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.fragments.dialogs;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;

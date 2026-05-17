@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.listeners;
 
 import android.content.Context;
 import android.view.GestureDetector;

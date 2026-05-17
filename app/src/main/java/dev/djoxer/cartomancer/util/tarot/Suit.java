@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer.util;
+package dev.djoxer.cartomancer.util.tarot;
 
 public enum Suit {
     TRUMPS(0),

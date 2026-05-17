@@ -1,10 +1,12 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.widget;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.Context;
 import android.content.Intent;
+
+import dev.djoxer.cartomancer.MainActivity;
 
 public class WidgetProvider extends AppWidgetProvider {
 

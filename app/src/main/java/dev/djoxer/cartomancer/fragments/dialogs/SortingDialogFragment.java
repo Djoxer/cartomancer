@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.fragments.dialogs;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+
+import dev.djoxer.cartomancer.R;
 
 public class SortingDialogFragment extends BottomSheetDialogFragment {
 

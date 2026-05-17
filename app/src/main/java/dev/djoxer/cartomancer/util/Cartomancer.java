@@ -10,6 +10,11 @@ import java.util.List;
 import java.util.Random;
 import java.util.Stack;
 
+import dev.djoxer.cartomancer.util.tarot.Card;
+import dev.djoxer.cartomancer.util.tarot.Deck;
+import dev.djoxer.cartomancer.util.tarot.Hand;
+import dev.djoxer.cartomancer.util.tarot.Suit;
+
 public class Cartomancer {
     private Deck deck;
     private Hand[] hands;

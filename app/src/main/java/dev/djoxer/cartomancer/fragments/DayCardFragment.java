@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.fragments;
 
 import static dev.djoxer.cartomancer.MainActivity.calendar;
 
@@ -15,7 +15,9 @@ import androidx.annotation.RequiresApi;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 
-import dev.djoxer.cartomancer.util.Card;
+import dev.djoxer.cartomancer.MainActivity;
+import dev.djoxer.cartomancer.R;
+import dev.djoxer.cartomancer.util.tarot.Card;
 import dev.djoxer.cartomancer.util.Cartomancer;
 
 import java.util.Calendar;

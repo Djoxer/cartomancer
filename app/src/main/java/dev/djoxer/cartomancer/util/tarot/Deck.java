@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer.util;
+package dev.djoxer.cartomancer.util.tarot;
 
 import static dev.djoxer.cartomancer.util.Cartomancer.*;
 

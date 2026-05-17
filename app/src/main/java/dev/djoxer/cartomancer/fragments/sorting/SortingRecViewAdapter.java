@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer;
+package dev.djoxer.cartomancer.fragments.sorting;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import dev.djoxer.cartomancer.util.Card;
+import dev.djoxer.cartomancer.MainActivity;
+import dev.djoxer.cartomancer.R;
+import dev.djoxer.cartomancer.util.tarot.Card;
 
 import java.util.ArrayList;
 import java.util.List;

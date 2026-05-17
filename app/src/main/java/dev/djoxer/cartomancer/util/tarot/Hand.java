@@ -1,4 +1,4 @@
-package dev.djoxer.cartomancer.util;
+package dev.djoxer.cartomancer.util.tarot;
 
 import java.util.ArrayList;
 import java.util.List;
