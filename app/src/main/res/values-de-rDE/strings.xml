@@ -31,6 +31,19 @@
     <string name="text_language">Sprache</string>
     <string name="lang_en">Englisch</string>
     <string name="lang_de">Deutsch</string>
+    <!-- Tierkreiszeichen -->
+    <string name="sign_aries">Widder</string>
+    <string name="sign_taurus">Stier</string>
+    <string name="sign_gemini">Zwillinge</string>
+    <string name="sign_cancer">Krebs</string>
+    <string name="sign_leo">Löwe</string>
+    <string name="sign_virgo">Jungfrau</string>
+    <string name="sign_libra">Waage</string>
+    <string name="sign_scorpio">Skorpion</string>
+    <string name="sign_sagittarius">Schütze</string>
+    <string name="sign_capricorn">Steinbock</string>
+    <string name="sign_aquarius">Wassermann</string>
+    <string name="sign_pisces">Fische</string>
 
     <string-array name="coins">
         <item>Münzen</item>

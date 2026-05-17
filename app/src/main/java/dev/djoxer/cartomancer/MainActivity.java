@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.AppCompatToggleButton;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -77,19 +78,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         AppCompatToggleButton toggleDarkmode = header.findViewById(R.id.toggle_darkmode);
         UiModeManager uiModeManager = (UiModeManager) getSystemService(UI_MODE_SERVICE);
 
-        toggleDarkmode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton toggle, boolean isChecked) {
-                if (isChecked) {
-                    toggle.setBackground(getResources().getDrawable(R.drawable.ic_mode_dark));
-                    toggle.setChecked(true);
-                    uiModeManager.setNightMode(UiModeManager.MODE_NIGHT_YES);
-                } else {
-                    toggle.setBackground(getResources().getDrawable(R.drawable.ic_mode_light));
-                    toggle.setChecked(false);
-                    uiModeManager.setNightMode(UiModeManager.MODE_NIGHT_NO);
-                }
-
+        toggleDarkmode.setOnCheckedChangeListener((tgl, isChecked) -> {
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
             }
         });
 
@@ -147,8 +140,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     protected void onDestroy() {
-        killProcess(myPid());
         super.onDestroy();
+        // killProcess nur wenn App wirklich beendet wird, nicht bei Recreation
+        if (isFinishing()) {
+            killProcess(myPid());
+        }
     }
 
     @Override
