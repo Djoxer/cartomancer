@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Cartomancer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -37,6 +38,20 @@
     <string name="label_sun">Sun</string>
     <string name="label_kin">KIN</string>
     <string name="text_placeholder">—</string>
+
+    <!-- Moon overlay -->
+    <string name="moon_overlay_title">☽  Moon Details</string>
+    <string name="moon_overlay_close">close</string>
+    <string name="moon_overlay_illumination_label">ILLUMINATION</string>
+    <string name="moon_overlay_illumination">%1$d%%</string>
+    <string name="moon_overlay_last_new_label">LAST NEW MOON</string>
+    <string name="moon_overlay_last_new">%1$d d  %2$d h ago</string>
+    <string name="moon_overlay_next_full_label">NEXT FULL MOON</string>
+    <string name="moon_overlay_next_full">in %1$s d  (%2$s)</string>
+    <string name="moon_overlay_next_first_quarter_label">FIRST QUARTER</string>
+    <string name="moon_overlay_next_first_quarter">in %1$s d  (%2$s)</string>
+    <string name="moon_overlay_next_new_label">NEXT NEW MOON</string>
+    <string name="moon_overlay_next_new">in %1$s d  (%2$s)</string>
 
     <!-- About -->
     <string name="about_description">A Tarot-based calendar and divination app combining ancient symbolic systems with modern mobile technology.</string>
